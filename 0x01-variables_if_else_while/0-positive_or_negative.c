@@ -19,7 +19,7 @@ int main(void)
 	}
 	else if (n == 0)
 	{
-		printf("Zero");
+		printf("zero");
 	}
 	else
 	{
