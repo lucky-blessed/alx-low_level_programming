@@ -11,8 +11,10 @@ int main(void)
 	int count;
 
 	printf("%ld, %ld", prev, curr);
-	for (count = 3; count <= 50; count++);
+	for (count = 3; count <= 50; count++)
 	{
+		next = prev + curr;
+		printf(", %ld", next);
 		prev = curr;
 		curr = next;
 	}
