@@ -7,7 +7,6 @@
 int _print_last_digit(int n)
 {
 	int last_digit;
-	int n;
 
 	if (n < 0)
 	{
