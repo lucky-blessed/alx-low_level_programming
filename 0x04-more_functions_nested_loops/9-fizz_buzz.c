@@ -1,12 +1,14 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - Entry point
- *
  * Return: Aways 0 (Success)
  */
 int main(void)
 {
-	for (int i = 1; i <= 100; i++)
+	int i;
+
+	for (i = 1; i <= 100; i++)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
