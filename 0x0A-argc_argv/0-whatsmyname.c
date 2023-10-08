@@ -4,14 +4,11 @@
  * main - Entry point
  * @argc: The number of commandline arguments
  * @argv: An array containing the command line argument.
+ * Return: 0 (Success)
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__ ((unused)), char *argv[])
 {
-	int i;
-
-	for (i = 0; i < argc; i++)
-	{
-		printf("%s\n", argv[i]);
-	}
+	(void) argv;
+	printf("%s\n", *argv);
 	return (0);
 }
