@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		perror("Error");
 		exit(98);
 	}
-	Elf64_elf_header;
+	Elf64_Ehdr elf_header;
 	if (read(d_file, &elf_header, sizeof(Elf64_header)) != sizeof(Elf64_Ehdr))
 	{
 		fprintf(stderr, "Error: Cannot read Elf header\n");
