@@ -1,4 +1,5 @@
 #include "main.h"
+void display_elf_header_info(const Elf64_Ehdr *elf_header);
 /**
  * main - Entery Point
  * @argc: Argumment count.
@@ -21,7 +22,6 @@ int main(int argc, char *argv[])
 		perror("Error");
 		exit(98);
 	}
-	Elf64_Ehdr elf_header;
 	if (read(d_file, &elf_header, sizeof(Elf64_header)) != sizeof(Elf64_Ehdr))
 	{
 		fprintf(stderr, "Error: Cannot read Elf header\n");
