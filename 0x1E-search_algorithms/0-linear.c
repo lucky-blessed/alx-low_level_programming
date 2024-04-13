@@ -3,7 +3,7 @@
 /**
  * linear_search - searches for value in array of integers using linear search
  * @array: Pointer to the first element of the array to search in
- * @size; Number of the element in the array
+ * @size: Number of the element in the array
  * @value: Value to search for
  *
  * Return: The first index where the value is located or -1 if not found
