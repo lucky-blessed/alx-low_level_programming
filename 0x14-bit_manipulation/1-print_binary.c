@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 
 /**
  * print_binary - prints the binary representation
@@ -19,4 +20,15 @@ void print_binary(unsigned long int n)
 	{
 		_putchar('0');
 	}
+=======
+/**
+ * print_binary - Prints the binary representation of an integer
+ * @n: Unsighed integer
+ */
+void print_binary(unsigned long int n)
+{
+	if (n > 1)
+		print_binary(n >> 1);
+	_putchar((n & 1) + '0');
+>>>>>>> ffb52031b1a96645b315343a368b8bdaf9619a89
 }

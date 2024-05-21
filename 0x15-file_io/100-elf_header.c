@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 /*
  * File: 100-elf_header.c
  * Auth: Brennan D Baraban
  */
 
+=======
+>>>>>>> ffb52031b1a96645b315343a368b8bdaf9619a89
 #include <elf.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -64,7 +67,11 @@ void print_magic(unsigned char *e_ident)
 		if (index == EI_NIDENT - 1)
 			printf("\n");
 		else
+<<<<<<< HEAD
 			printf(" ");
+=======
+printf(" ");
+>>>>>>> ffb52031b1a96645b315343a368b8bdaf9619a89
 	}
 }
 
@@ -135,7 +142,10 @@ void print_version(unsigned char *e_ident)
 		break;
 	}
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ffb52031b1a96645b315343a368b8bdaf9619a89
 /**
  * print_osabi - Prints the OS/ABI of an ELF header.
  * @e_ident: A pointer to an array containing the ELF version.

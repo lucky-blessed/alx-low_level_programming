@@ -1,18 +1,32 @@
+<<<<<<< HEAD
 #ifndef _SORTING_ALGOS_H_
 #define _SORTING_ALGOS_H_
 
 #include <stdlib.h>
 #include <stdio.h>
+=======
+#ifndef SEARCH_ALGOS_H
+#define SEARCH_ALGOS_H
+
+#include <math.h>
+#include <stdio.h>
+#include <stddef.h>
+>>>>>>> ffb52031b1a96645b315343a368b8bdaf9619a89
 
 /**
  * struct listint_s - singly linked list
  *
  * @n: Integer
+<<<<<<< HEAD
  * @index: Index of the node in the list
  * @next: Pointer to the next node
  *
  * Description: singly linked list node structure
  * for Holberton project
+=======
+ * @index: Node index in the list
+ * @next: Point to next node
+>>>>>>> ffb52031b1a96645b315343a368b8bdaf9619a89
  */
 typedef struct listint_s
 {
@@ -25,12 +39,19 @@ typedef struct listint_s
  * struct skiplist_s - Singly linked list with an express lane
  *
  * @n: Integer
+<<<<<<< HEAD
  * @index: Index of the node in the list
  * @next: Pointer to the next node
  * @express: Pointer to the next node in the express lane
  *
  * Description: singly linked list node structure with an express lane
  * for Holberton project
+=======
+ * @index: List node indexes
+ * @next: Pointer to the next node in the list
+ * @express: Pointer to the next node in the express lane
+ *
+>>>>>>> ffb52031b1a96645b315343a368b8bdaf9619a89
  */
 typedef struct skiplist_s
 {
@@ -49,4 +70,8 @@ int advanced_binary(int *array, size_t size, int value);
 listint_t *jump_list(listint_t *list, size_t size, int value);
 skiplist_t *linear_skip(skiplist_t *list, int value);
 
+<<<<<<< HEAD
 #endif
+=======
+#endif /* SEARCH_ALGOS_H */
+>>>>>>> ffb52031b1a96645b315343a368b8bdaf9619a89
