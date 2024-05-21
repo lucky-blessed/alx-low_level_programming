@@ -1,21 +1,22 @@
 #include <stdio.h>
 /**
- * main - Entry Point
- * Description: Prints all numbers of base 16 in lowercase
- * Return: Always 0 (Success)
+ * main - print if the number is postive, zero, or negative
+ *
+ * Description: using the main function
+ * this program prints "Programming is positive, zero, or negative
+ * Return: 0
  */
 int main(void)
 {
-	char hex_digits;
-
-	for (hex_digits = '0'; hex_digits <= '9'; hex_digits++)
-	{
-		putchar(hex_digits);
-	}
-	for (hex_digits = 'a'; hex_digits <= 'f'; hex_digits++)
-	{
-		putchar(hex_digits);
-	}
-	putchar('\n');
-	return (0);
+char c;
+for (c = '0'; c <= '9'; c++)
+{
+	putchar(c);
+}
+for (c = 'a'; c <= 'f'; c++)
+{
+	putchar(c);
+}
+putchar('\n');
+return (0);
 }

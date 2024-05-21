@@ -1,14 +1,13 @@
-#include "main.h"
 #include <stdio.h>
+
 /**
- * main - Entry point.
- * @argc: The number of command lines.
- * @argv: An array containing the comman line.
- * Return: 0 (success)
- */
-int main(int argc, char *argv[])
+* main -> this is a function to print its name
+* @argc: argc parameter
+* @argv: an array of a command listed
+* Return: 0 for success
+*/
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-	(void) argv;
 	printf("%d\n", argc - 1);
 	return (0);
 }

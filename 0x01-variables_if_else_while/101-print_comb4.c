@@ -1,30 +1,44 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Description: Prints all possibel different combination of three digits
- * Return: Always 0 (Success)
+ * main - program that prints all possible different combinations of 3 digits.
+ * Return: 0
  */
 int main(void)
 {
-	int first_digit, second_digit, third_digit;
+	int c = 0;
+	int f_d
+	int m_d;
+	int l_d;
 
-	for (first_digit = 0; first_digit <= 7; first_digit++)
-	{
-		for (second_digit = first_digit + 1; second_digit <= 8; second_digit++)
-		{
-			for (third_digit = second_digit + 1; third_digit <= 9; third_digit++)
-			{
-				putchar(first_digit + '0');
-				putchar(second_digit + '0');
-				putchar(third_digit + '0');
-				if (first_digit != 7 || second_digit != 8 || third_digit != 9)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-		}
-	}
-	putchar('\n');
-	return (0);
+	while (c <= 999)
+	{      									f_d = (c / 100 + '0');
+		m_d = (c / 10 % 10 + '0');					l_d = (c % 10 + '0');
+	
+		if ((f_d < m_d) && (m_d < l_d))
+		{	
+																					putchar(f_d);		         					putchar(m_d);	
+													putchar(l_d);
+
+
+
+																																	if (c != 789)
+
+																																					{
+
+																																										putchar(',');
+
+																																														putchar(' ');
+
+																																																	}
+
+																																			}
+
+																			c++;
+
+																				}
+
+						putchar('\n');
+
+						return (0);
+
 }

@@ -1,33 +1,41 @@
 #include "main.h"
-#include <stdlib.h>
+
 /**
- * str_concat - Function to concatenate two strings.
- * @s1: First string to be concatenated
- * @s2: Second string to be concatenated.
- *
- * Return: Pointer to newly allocated concatenated string or NULL otherwise.
- */
+* str_concat -> string concatinating function
+* @s1: string 1
+* @s2: string 2
+* Return: string 1 + string 2
+*/
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int i, j;
-	unsigned int length1 = 0, length2 = 0;
-	char *contd;
+	int i = 0, j = 0, l = 0, k = 0;
+	char *s;
 
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (s1[length1] != '\0')
-		length1++;
-	while (s2[length2] != '\0')
-		length2++;
-	contd = malloc(sizeof(char) * (length1 + length2 + 1));
-	if (contd == NULL)
+	while (s1[i])
+		i++;
+	while (s2[j])
+		j++;
+
+	l = i + j;
+	s = (char *)malloc(l * sizeof(char) + 1);
+	if (s == NULL)
 		return (NULL);
-	for (i = 0; i < length1; i++)
-		contd[i] = s1[i];
-	for (j = 0; j <  length2; j++)
-		contd[i + j] = s2[j];
-	contd[i + j] = '\0';
-	return (contd);
+	j = 0;
+	while (k < l)
+	{
+		if (k < i)
+			s[k] = s1[k];
+		if (k >= i)
+		{
+			s[k] = s2[j];
+			j++;
+		}
+		k++;
+	}
+	s[k] = '\0';
+	return (s);
 }

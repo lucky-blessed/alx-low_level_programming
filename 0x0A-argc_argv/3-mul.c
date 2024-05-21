@@ -1,25 +1,25 @@
 #include <stdio.h>
-#include "main.h"
 #include <stdlib.h>
+
 /**
- * main - Entry point.
- * @argc: Number of command line argument.
- * @argv: Array containing the command line argument.
- * Return: 0 (success)
- */
+* main -> this is a function to print its name
+* @argc: argc parameter
+* @argv: an array of a command listed
+* Return: 0 for success
+*/
 int main(int argc, char *argv[])
 {
-	int num1, num2, product;
+	int result, num1, num2;
 
 	if (argc != 3)
 	{
-		printf("Error\n");
+		printf("%s\n", "Error");
 		return (1);
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
-	product = num1 * num2;
-	printf("%d\n", product);
+	result = num1 * num2;
+
+	printf("%d\n", result);
 	return (0);
 }
-

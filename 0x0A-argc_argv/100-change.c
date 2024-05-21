@@ -1,34 +1,37 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * main - Entry point.
- * @argc: Number of command line argumens.
- * @argv: Array containing the command line arguments
- * Return: 0 (Success)  or 1 (Error)
- */
+* main -> this is a function to print its name
+* @argc: argc parameter
+* @argv: an array of a command listed
+* Return: 0 for success
+*/
 int main(int argc, char *argv[])
 {
-	int i, cent, coin;
-	int denom[] = {25, 10, 5, 2, 1};
+	int num, j, result = 0;
+	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
-		printf("Error\n");
+		printf("%s\n", "Error");
 		return (1);
 	}
-	cent = atoi(argv[1]);
-	if (cent < 0)
+
+	num = atoi(argv[1]);
+	if (num < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-	coin = 0;
-	for (i = 0; i < 5; i++)
+	for (j = 0; j < 5 && num >= 0; j++)
 	{
-		coin += cent / denom[i];
-		cent %= denom[i];
+		while (num >= coins[j])
+		{
+			num -= coins[j];
+			result++;
+		}
 	}
-	printf("%d\n", coin);
+	printf("%d\n", result);
 	return (0);
 }

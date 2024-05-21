@@ -1,21 +1,22 @@
 #include <stdio.h>
 /**
- * main - Entery point
- * Description: Prints alphabet letters in lowal case and then in upper case
- * Return: Aways 0 (Success)
- */
+* main - print if the number is postive, zero, or negative
+*
+* Description: using the main function
+* this program prints "Programming is positive, zero, or negative
+* Return: 0
+*/
 int main(void)
 {
-	char lowercase, uppercase;
-
-	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
-	{
-		putchar(lowercase);
-	}
-	for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)
-	{
-		putchar(uppercase);
-	}
-	putchar('\n');
-	return (0);
+char ch;
+for (ch = 'a' ; ch <= 'z' ; ch++)
+{
+	putchar(ch);
+}
+for (ch = 'A' ; ch <= 'Z' ; ch++)
+{
+	putchar(ch);
+}
+putchar('\n');
+return (0);
 }
